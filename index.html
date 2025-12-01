@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/voice-epub-reader-hosting/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="/voice-epub-reader-hosting/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/voice-epub-reader-hosting/favicon-16x16.png"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        />
+        <title>Voice EPUB Reader</title>
+      <script type="module" crossorigin src="/voice-epub-reader-hosting/assets/index-CBXWVhqU.js"></script>
+      <link rel="stylesheet" crossorigin href="/voice-epub-reader-hosting/assets/index-CI0kALXh.css">
+    <link rel="manifest" href="/voice-epub-reader-hosting/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/voice-epub-reader-hosting/registerSW.js"></script></head>
+    <body>
+        <div id="debug-info"></div>
+
+        <div id="spinner-wrapper">
+            <div id="spinner"></div>
+        </div>
+
+        <div id="page-container">
+            <div id="page-shadow-top"></div>
+            <div id="page"></div>
+            <div id="page-shadow-bottom"></div>
+        </div>
+
+        <div id="controls">
+            <div id="open-file-and-options">
+                <button id="controls-open-book-button">📁</button>
+                <button id="options-button">⚙️</button>
+            </div>
+            <div id="controls-inner-playback">
+                <button id="play-pause"></button>
+                <button id="previous-button">⏪</button>
+                <button id="next-button">⏩</button>
+            </div>
+            <div id="position-percentage">
+                <span id="position-percentage-number">0</span><span>%</span>
+            </div>
+        </div>
+
+        <dialog id="open-book-dialog">
+            <button class="close-dialog-button">✕</button>
+            <section id="open-book-dialog-main">
+                <div id="open-file">
+                    <label for="open-file-input" id="open-file-label"
+                        ><span>📁</span
+                        ><span
+                            ><span data-i18n="open-book-file"
+                                >Open a book file from your device</span
+                            >
+                            <span id="open-dialog-formats" data-i18n="format"
+                                >(EPUB format)</span
+                            ></span
+                        ></label
+                    >
+                    <input
+                        type="file"
+                        id="open-file-input"
+                        name="open_book_file"
+                        accept=".epub,.fb2"
+                    />
+                </div>
+                <div id="recent-books-with-header">
+                    <h3 id="recent-book-header" data-i18n="recent-books">
+                        Recent books
+                    </h3>
+                    <div id="recent-books-list"></div>
+                </div>
+            </section>
+        </dialog>
+
+        <dialog id="options-dialog">
+            <button class="close-dialog-button">✕</button>
+
+            <section id="options-dialog-main">
+                <div id="speed-option" class="options-line">
+                    <span data-i18n="speaking-speed">Speaking Speed</span>
+                    <span class="plus-minus-buttons">
+                        <button class="minus-button">-</button>
+                        <span class="numeric-option-value">1.0</span>
+                        <button class="plus-button">+</button>
+                    </span>
+                </div>
+
+                <div id="language-option" class="options-line">
+                    <label for="language-select" data-i18n="language"
+                        >Language</label
+                    >
+                    <select
+                        name="language-select"
+                        id="language-select"
+                    ></select>
+                </div>
+
+                <div id="voice-option" class="options-line">
+                    <label for="voice-select" data-i18n="voice">Voice</label>
+                    <select name="voice-select" id="voice-select"></select>
+                </div>
+
+                <div id="line-height-option" class="options-line">
+                    <span data-i18n="line-height">Line Height</span>
+                    <span class="plus-minus-buttons">
+                        <button class="minus-button">-</button>
+                        <span class="numeric-option-value">1.0</span>
+                        <button class="plus-button">+</button>
+                    </span>
+                </div>
+
+                <div id="font-option" class="options-line">
+                    <label for="font-select" data-i18n="font">Font</label>
+                    <select name="font-select" id="font-select"></select>
+                </div>
+
+                <div id="margin-option" class="options-line">
+                    <span data-i18n="margin">Margin</span>
+                    <span class="plus-minus-buttons">
+                        <button class="minus-button">-</button>
+                        <span class="numeric-option-value">1</span>
+                        <button class="plus-button">+</button>
+                    </span>
+                </div>
+
+                <div id="licenses-and-version" class="options-line">
+                    <a href="/.vite/license.md">Open-source licenses</a>
+                    <span id="version-number">v0.1.0</span>
+                </div>
+            </section>
+        </dialog>
+    </body>
+</html>

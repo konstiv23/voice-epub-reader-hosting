@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/voice-epub-reader-hosting/sw.js', { scope: '/voice-epub-reader-hosting/' })})}
