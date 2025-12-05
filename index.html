@@ -25,8 +25,8 @@
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
         />
         <title>Voice EPUB Reader</title>
-      <script type="module" crossorigin src="/voice-epub-reader-hosting/assets/index-BP-Rw2FH.js"></script>
-      <link rel="stylesheet" crossorigin href="/voice-epub-reader-hosting/assets/index-Czk_RWTH.css">
+      <script type="module" crossorigin src="/voice-epub-reader-hosting/assets/index-BKM3HiPx.js"></script>
+      <link rel="stylesheet" crossorigin href="/voice-epub-reader-hosting/assets/index-CBkCYI60.css">
     <link rel="manifest" href="/voice-epub-reader-hosting/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/voice-epub-reader-hosting/registerSW.js"></script></head>
     <body>
         <div id="debug-info"></div>
@@ -45,16 +45,32 @@
             <div id="open-file-and-options">
                 <button id="controls-open-book-button">📁</button>
                 <button id="options-button">⚙️</button>
+                <button id="toc-landscape-button">
+                    <img src="toc-icon.png" alt="Table of contents button" />
+                </button>
             </div>
             <div id="controls-inner-playback">
                 <button id="play-pause"></button>
                 <button id="previous-button">⏪</button>
                 <button id="next-button">⏩</button>
             </div>
-            <div id="position-percentage">
-                <span id="position-percentage-number">0</span><span>%</span>
+            <div id="toc-portrait-and-position">
+                <button id="toc-portrait-button">
+                    <img src="toc-icon.png" alt="Table of contents button" />
+                </button>
+                <div id="position-percentage">
+                    <span id="position-percentage-number">0</span><span>%</span>
+                </div>
             </div>
         </div>
+
+        <dialog id="toc-dialog">
+            <button class="close-dialog-button">✕</button>
+            <div id="toc-dialog-main">
+                <h3 data-i18n="table-of-contents">Table of contents</h3>
+                <div id="toc-list-wrapper"></div>
+            </div>
+        </dialog>
 
         <dialog id="open-book-dialog">
             <button class="close-dialog-button">✕</button>
@@ -160,7 +176,7 @@
 
                 <div id="licenses-and-version" class="options-line">
                     <a href="license.md">Open-source licenses</a>
-                    <span id="version-number">v0.2.4</span>
+                    <span id="version-number">v0.3.0</span>
                 </div>
             </section>
         </dialog>
