@@ -1,4 +1,4 @@
-# Voice EPUB Reader
+# Voice EPUB Reader TTS
 
 This is the web app version of Voice EPUB Reader: [link](https://konstiv23.github.io/voice-epub-reader-hosting/) (usable on Windows desktop)
 
