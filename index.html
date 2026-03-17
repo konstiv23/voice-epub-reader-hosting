@@ -25,8 +25,8 @@
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
         />
         <title>Voice EPUB Reader</title>
-      <script type="module" crossorigin src="/voice-epub-reader-hosting/assets/index-B1OjXFx0.js"></script>
-      <link rel="stylesheet" crossorigin href="/voice-epub-reader-hosting/assets/index-ChAslIKu.css">
+      <script type="module" crossorigin src="/voice-epub-reader-hosting/assets/index-CIFhqHCJ.js"></script>
+      <link rel="stylesheet" crossorigin href="/voice-epub-reader-hosting/assets/index-WfXldIb8.css">
     <link rel="manifest" href="/voice-epub-reader-hosting/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/voice-epub-reader-hosting/registerSW.js"></script></head>
     <body>
         <!-- For screen readers -->
@@ -70,6 +70,13 @@
         </div>
 
         <dialog id="toc-dialog">
+            <a
+                href="market://details?id=com.konstiv23.voiceepubreader"
+                class="please-rate"
+                >⭐⭐⭐⭐⭐
+                <span data-i18n="please-rate">Rate, please, rate</span></a
+            >
+
             <button class="close-dialog-button" aria-label="close">✕</button>
             <div id="toc-dialog-main">
                 <h3 data-i18n="table-of-contents">Table of contents</h3>
@@ -78,6 +85,13 @@
         </dialog>
 
         <dialog id="open-book-dialog">
+            <a
+                href="market://details?id=com.konstiv23.voiceepubreader"
+                class="please-rate"
+                >⭐⭐⭐⭐⭐
+                <span data-i18n="please-rate">Rate, please, rate</span></a
+            >
+
             <button class="close-dialog-button" aria-label="close">✕</button>
             <section id="open-book-dialog-main">
                 <div id="open-file">
@@ -131,6 +145,13 @@
         <dialog id="options-dialog">
             <button class="close-dialog-button" aria-label="close">✕</button>
 
+            <a
+                href="market://details?id=com.konstiv23.voiceepubreader"
+                class="please-rate"
+                >⭐⭐⭐⭐⭐
+                <span data-i18n="please-rate">Rate, please, rate</span></a
+            >
+
             <section id="options-dialog-main">
                 <div id="speed-option" class="options-line">
                     <span data-i18n="speaking-speed">Speaking Speed</span>
@@ -181,12 +202,7 @@
 
                 <div id="licenses-and-version" class="options-line">
                     <a href="license.md">Open-source licenses</a>
-                    <span id="version-number">v0.3.20</span>
-                </div>
-
-                <div id="review-plea">
-                    A review on Google Play would be appreciated (find the app
-                    manually, links don't work here)
+                    <span id="version-number">v0.3.24</span>
                 </div>
             </section>
         </dialog>
