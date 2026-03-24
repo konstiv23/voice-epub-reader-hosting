@@ -1,9 +1,7 @@
-# Voice EPUB Reader TTS
+# Voice EPUB Reader TTS hosting
 
-This is the web app version of Voice EPUB Reader: [link](https://konstiv23.github.io/voice-epub-reader-hosting/) (usable on Windows desktop)
+[Install Android version](https://play.google.com/store/apps/details?id=com.konstiv23.voiceepubreader)
 
-Install Android version: [link](https://play.google.com/store/apps/details?id=com.konstiv23.voiceepubreader)
+[Use on desktop browser](https://konstiv23.github.io/voice-epub-reader-hosting/)
 
-Web app currently doesn't work on Android due to browser bugs.
-
-Feedback is welcome to konstiv23 at gmail
+Contact: konstiv23 at gmail
