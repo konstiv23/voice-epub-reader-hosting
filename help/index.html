@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Voice EPUB Reader Help</title>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            h2,
+            h3 {
+                text-wrap: balance;
+                margin-top: 1.5rem;
+            }
+            img {
+                height: 500px;
+                display: block;
+                border: 1px solid gray;
+                margin: 0.5rem;
+            }
+            details {
+                margin: 1rem;
+            }
+            #back {
+                color: inherit;
+                -webkit-text-decoration: none;
+                text-decoration: none;
+                font-size: 2.5rem;
+                display: inline-block;
+                margin: 0.75rem 0.55rem;
+                margin-bottom: 0;
+            }
+        </style>
+    <link rel="manifest" href="/voice-epub-reader-hosting/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/voice-epub-reader-hosting/registerSW.js"></script></head>
+    <body>
+        <a
+            href="https://konstiv23.github.io/voice-epub-reader-hosting/"
+            id="back"
+            >◁</a
+        >
+
+        <h2>If speech stops when the screen is off</h2>
+        <p>You need to disable various battery-saving features:</p>
+
+        <details>
+            <summary>On Voice EPUB Reader</summary>
+            <p>
+                <img src="/voice-epub-reader-hosting/img-help/settings.webp" />
+                <img src="/voice-epub-reader-hosting/img-help/app-management.webp" />
+                <img src="/voice-epub-reader-hosting/img-help/voice-reader-item.webp" />
+                <img src="/voice-epub-reader-hosting/img-help/voice-reader-power-1.webp" />
+                <img src="/voice-epub-reader-hosting/img-help/voice-reader-power-2.webp" />
+            </p>
+        </details>
+
+        <details>
+            <summary>On your TTS Engine</summary>
+            <img src="/voice-epub-reader-hosting/img-help/settings.webp" />
+            <img src="/voice-epub-reader-hosting/img-help/app-management.webp" />
+            <img src="/voice-epub-reader-hosting/img-help/google-tts-item.webp" />
+            <img src="/voice-epub-reader-hosting/img-help/google-tts-power-1.webp" />
+            <img src="/voice-epub-reader-hosting/img-help/google-tts-power-2.webp" />
+        </details>
+
+        <details>
+            <summary>If your phone is made by TECNO or Infinix</summary>
+            <p>
+                <img src="/voice-epub-reader-hosting/img-help/settings.webp" />
+                <img src="/voice-epub-reader-hosting/img-help/tecno-1-settings.webp" />
+                <img src="/voice-epub-reader-hosting/img-help/tecno-2-battery.webp" />
+                <img src="/voice-epub-reader-hosting/img-help/tecno-3-sliders.webp" />
+            </p>
+        </details>
+
+        <h2>If there are no voices in your language</h2>
+        <p>
+            <a href="market://details?id=com.google.android.tts"
+                >Try installing Google TTS</a
+            >
+        </p>
+
+        <h3>If you need to contact the app's author</h3>
+        <p>Use email konstiv23@gmail.com</p>
+    </body>
+</html>
