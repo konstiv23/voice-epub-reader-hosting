@@ -4,4 +4,4 @@
 
 [Use on desktop browser](https://konstiv23.github.io/voice-epub-reader-hosting/)
 
-Contact: konstiv23 at gmail
+Contact developer: konstiv23 at gmail (Konstantin Ivanov)
